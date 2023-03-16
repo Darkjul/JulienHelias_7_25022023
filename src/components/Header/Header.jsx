@@ -4,11 +4,9 @@ import Logo from "../../assets/logo.jpg"
 
 const Header = () => {
   return (
-    <nav className="header">
-      
+    <nav className="header">      
           
-        <img src={Logo} alt="logo kasa" className='logo'/>        
-        
+        <img src={Logo} alt="logo kasa" className='logo'/>                
         
           <ul className='nav'>                        
                 <li>
@@ -20,9 +18,7 @@ const Header = () => {
                 <NavLink to="/About" className="navlink">
                     A Propos
                 </NavLink>
-                </li>
-            
-            
+                </li>                        
         </ul>
         
     </nav>

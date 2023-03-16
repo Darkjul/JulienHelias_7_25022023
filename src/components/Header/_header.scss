@@ -1,0 +1,49 @@
+// Style SCSS des composants du Header
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  height: 68px;
+  margin-top: 40px;
+}
+
+.logo{
+    width: 210px;
+    height: 68px;
+}
+
+.nav {  
+  left: 90.65%;
+  right: 0%;
+  top: 25%;
+  bottom: 25%;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 142.6%;  
+
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+
+  color: #ff6060;
+  list-style-type: none; 
+}
+
+.navlink {
+  color: #ff6060;
+  padding-left: 57px;
+  text-decoration: none;
+  justify-content: space-between;
+  &:hover {
+    text-decoration-line: underline;
+    color: #ff6060;
+  }
+}
+
