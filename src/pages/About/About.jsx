@@ -28,7 +28,7 @@ const About = () => {
 	]
 
     return (
-        <article>
+        <>
          <div className='banner-container'>             
                 <img src={banner} alt="Paysage Rocheux" className="img-banner" />  
          </div> 
@@ -43,7 +43,7 @@ const About = () => {
 				)}
 			</main>    
                  
-        </article>             
+        </>             
     );
 };
 
