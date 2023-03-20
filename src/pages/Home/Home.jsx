@@ -23,7 +23,7 @@ const Home = () => {
                 <Banner />
             </div>
         </div>
-
+        
         <main className="cards">
         {data.map((logements) => (       
           <NavLink

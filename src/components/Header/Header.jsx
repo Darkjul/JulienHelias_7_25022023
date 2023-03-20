@@ -4,10 +4,10 @@ import Logo from "../../assets/logo.jpg"
 
 const Header = () => {
   return (
-    <nav className="header">      
+    <nav className="header">     
           
-        <img src={Logo} alt="logo kasa" className='logo'/>                
-        
+        <img src={Logo} alt="logo kasa" className='logo'/>             
+              
           <ul className='nav'>                        
                 <li>
                 <NavLink to="/" className="navlink">
