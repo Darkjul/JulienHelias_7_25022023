@@ -1,3 +1,5 @@
+// Import des éléments nécéssaires au fonctionnement de Footer.jsx
+
 import React from "react";
 import logo from '../../assets/logo_footer.png'
 

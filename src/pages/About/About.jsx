@@ -1,3 +1,5 @@
+// Import des éléments nécéssaires au fonctionnement de About.jsx
+
 import React from 'react';
 import Collapse from '../../components/Collapse/Collapse';
 import banner from '../../assets/banner-about.png';

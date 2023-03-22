@@ -1,3 +1,5 @@
+// Import des éléments nécéssaires au fonctionnement de App.js
+
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./pages/About/About";
@@ -9,14 +11,14 @@ import Footer from "./components/Footer/Footer";
 const App = () => {
   return (
     <BrowserRouter>
-      {/* Header */}
+      {/* Import du Header sur chaque page du site */}
       <Header/>
       <Routes>
         <Route path="/" element={<Home />} />        
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Error />} />
       </Routes>
-      {/* Footer */}
+      {/* Import du Footer sur chaque page du site */}
       <Footer/>
     </BrowserRouter>
   );

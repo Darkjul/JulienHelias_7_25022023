@@ -1,3 +1,5 @@
+// Import des éléments nécéssaires au fonctionnement de Banner.jsx
+
 import React from 'react';
 import banner from '../../assets/banner.jpg';
 

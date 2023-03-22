@@ -1,3 +1,5 @@
+// Import des éléments nécéssaires au fonctionnement de Collapse.jsx
+
 import arrow from '../../assets/arrow.png';
 import { useState } from 'react';
 

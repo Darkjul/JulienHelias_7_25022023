@@ -1,3 +1,5 @@
+// Import des éléments nécéssaires au fonctionnement de Error.jsx
+
 import React from "react";
 import { Link } from "react-router-dom";
 

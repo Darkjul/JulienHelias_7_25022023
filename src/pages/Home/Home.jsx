@@ -1,3 +1,5 @@
+// Import des éléments nécéssaires au fonctionnement de Home.jsx
+
 import React, { useEffect, useState } from 'react';
 import Banner from '../../components/Banner/Banner';
 import { NavLink } from "react-router-dom";

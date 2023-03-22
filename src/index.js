@@ -1,3 +1,5 @@
+// Import des éléments nécéssaires au fonctionnement de index.js
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
