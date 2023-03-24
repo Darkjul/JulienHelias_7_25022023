@@ -3,6 +3,8 @@
 import React from 'react';
 import banner from '../../assets/banner.jpg';
 
+// Contante Banner qui va afficher les éléments de la bannière
+
 const Banner = () => {
     return (
         <div className='fond-banner'>

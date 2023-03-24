@@ -4,7 +4,11 @@ import React, { useEffect, useState } from 'react';
 import Banner from '../../components/Banner/Banner';
 import { NavLink } from "react-router-dom";
 
+// Constante Home qui va afficher les éléments composants la page d'acceuil
+
 const Home = () => {
+
+  // Import des Logements via le fichier logements.JSON avec un Fetch 
   
   const [data, setData] = useState([]);
   const getData = () => {
@@ -25,6 +29,8 @@ const Home = () => {
                 <Banner />
             </div>
         </div>
+
+        {/* Affichage des éléments Carte Logements sur la page d'acceuil via les résultats du Fetch */}
         
         <main className="cards">
         {data.map((logements) => (       

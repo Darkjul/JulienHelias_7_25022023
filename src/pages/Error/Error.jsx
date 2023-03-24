@@ -3,6 +3,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// Contante Error qui va afficher les éléments de la page Erreur
+
 const Error = () => {
   return (
     <>

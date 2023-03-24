@@ -4,6 +4,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/logo.jpg"
 
+// Contante Header qui va afficher les éléments du Header
+
 const Header = () => {
   return (
     <nav className="header">     

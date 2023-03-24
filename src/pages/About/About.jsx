@@ -4,7 +4,11 @@ import React from 'react';
 import Collapse from '../../components/Collapse/Collapse';
 import banner from '../../assets/banner-about.png';
 
+// Contante About qui va afficher les éléments de la page A Propos
+
 const About = () => { 
+
+	// Création d'une constante qui va recceuillir les infos de chaque Collapse
 
     const infosAbout = [ 
 		{

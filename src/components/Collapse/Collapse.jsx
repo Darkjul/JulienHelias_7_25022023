@@ -3,6 +3,8 @@
 import arrow from '../../assets/arrow.png';
 import { useState } from 'react';
 
+// Contante Header qui va gérer les différents mode d'affichage des les éléments de chaque Collapse
+
 const Collapse = ({ title, description }) =>  { 
 
     const [toggle, setToggle] = useState(false);

@@ -3,6 +3,8 @@
 import React from "react";
 import logo from '../../assets/logo_footer.png'
 
+// Contante Footer qui va afficher les éléments du Footer
+
 const Footer = () => {    
     return (
         
