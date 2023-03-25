@@ -1,5 +1,8 @@
 // Import des fichiers composants l'intégralité du Style CSS du site
 
+@import "./Base/base";
+@import "./Utils/variables";
+
 @import "../components/Header/header";
 @import "../components/Footer/footer";
 @import "../components/Banner/banner";
@@ -8,5 +11,3 @@
 @import "../pages/Error/error";
 @import "../pages/About/about";
 @import "../pages/Home/home";
-
-@import "./Base/base";

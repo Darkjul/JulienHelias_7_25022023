@@ -4,11 +4,9 @@
   position: relative;
   width: 90%;
   margin: auto;
-  margin-top: 120px;
-  background: #000000;
+  margin-top: 120px;  
   border-radius: 25px;
-  height: 223px;
-  border-radius: 25px;
+  height: 223px;  
 }
 
 .image-banner {
@@ -27,7 +25,7 @@
   bottom: 69.04%;
   font-family: "Monserrat", sans-serif;
   font-size: 48px;
-  color: #fff;
+  color: $tertiary-color;
   text-align: center;
   font-weight: normal;
   z-index: 20;

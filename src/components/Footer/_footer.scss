@@ -2,25 +2,26 @@
 
 .footer {
 	display: flex;
+	flex-direction: column;	
 	width: 99,5%;
 	height: 209px;
 	margin-top: 5%;
     margin-right: 1%;
-	background-color: #000;
-	flex-direction: column;
+	background-color: $footer-color;	
 
 	&__copyright {	       
 		display: flex;
 		align-items: flex-end;
 		justify-content: center;
-		color: white;
+		color: $secondary-color;
 		width: 100%;
 		margin: 5% 0 4% 0;
 	}
 
-	img {       
+	img { 		    
         display: flex;        
         align-self: center;
+		gap: 50px;
 		margin-top: 2%;
 		width: 122px;
 		height: 40px;

@@ -1,4 +1,4 @@
-// Style SCSS de la page Home
+// Style SCSS de la page d'acceuil
 
 .cards {  
   display: flex;
@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   color: #F6F6F6;
-  background-color: #F7F7F7;
+  background-color: $secondary-color;
   border-radius: 25px;  
   max-width: 1240px;
   width: 86%;
@@ -37,12 +37,12 @@
   left: 0;
   right: 0;
   z-index: 10;
-  color: #FFFFFF;
+  color: $tertiary-color;
   font-size: 18px;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background: $color-gradient;
   padding: 0 25% 20px 20px;
 }
 

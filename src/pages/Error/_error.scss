@@ -2,7 +2,7 @@
 
 .errorBox {
   display: flex;
-  color: #FF6060;
+  color: $primary-color;
   flex-direction: column;
   align-items: center;
   margin: 100px 0;
@@ -25,7 +25,7 @@
 .errorLinkHome {
   display: flex;
   text-decoration: none;
-  color: #FF6060;
+  color: $primary-color;
   font-size: 18px;
   font-weight: 500;
   margin-top: 100px;

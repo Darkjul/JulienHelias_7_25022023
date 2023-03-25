@@ -32,18 +32,18 @@
   align-items: flex-end;
   text-align: right;
 
-  color: #ff6060;
+  color: $primary-color;
   list-style-type: none; 
 }
 
 .navlink {
-  color: #ff6060;
+  color: $primary-color;
   padding-left: 57px;
   text-decoration: none;
   justify-content: space-between;
   &:hover {
     text-decoration-line: underline;
-    color: #ff6060;
+    color: $primary-color;
   }
 }
 
