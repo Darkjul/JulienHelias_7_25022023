@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Collapse from '../../components/Collapse/Collapse';
-import banner from '../../assets/banner-about.png';
+import BannerAbout from '../../components/Banner/BannerAbout';
 
 // Contante About qui va afficher les éléments de la page A Propos
 
@@ -34,10 +34,11 @@ const About = () => {
 	]
 
     return (
-        <>
+        <> 
          <div className='banner-container'>             
-                <img src={banner} alt="Paysage Rocheux" className="img-banner" />  
+                <BannerAbout />
          </div> 
+
 
          <main className='about_main'>
 				{infosAbout.map(data => {
