@@ -1,16 +1,19 @@
 // Import des éléments nécéssaires au fonctionnement de BannerAbout.jsx
 
 import React from 'react';
-import banner from '../../assets/banner-about.png';
+import Banner from '../../components/Banner/Banner';
+import bannerAbout from '../../assets/banner-about.png';
 
-// Contante Banner qui va afficher les éléments de la bannière de la page A Propos
+// Contante BannerAbout qui va afficher les éléments de la bannière de la page A Propos
 
 const BannerAbout = () => {
-    return (
-        <div className='banner-container'>             
-                <img src={banner} alt="Paysage Rocheux" className="img-banner" />  
-         </div> 
-    );
-};
+    return(
+        <Banner
+            title=''
+            src={bannerAbout}
+            alt='Paysage Montagneux'
+        />
+    )
+}
 
 export default BannerAbout;
