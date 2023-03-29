@@ -7,8 +7,8 @@ import React from 'react';
 const Banner = (props) => {
     return(
         <div className="banner">
-            <h1 className="banner-title">{props.title}</h1>
-            <img src={props.src} alt={props.alt} className='banner-image' />
+            <h1 className="banner_title">{props.title}</h1>
+            <img src={props.src} alt={props.alt} className='banner_image' />
         </div>
     )
 }
