@@ -8,6 +8,7 @@ import Logo from "../../assets/logo.jpg"
 
 const Header = () => {
   return (
+    
     <nav className="header">     
           
         <img src={Logo} alt="logo kasa" className='logo'/>             
@@ -18,13 +19,14 @@ const Header = () => {
                     Accueil
                 </NavLink>
                 </li>
+        
                 <li>
                 <NavLink to="/About" className="navlink">
                     A Propos
                 </NavLink>
                 </li>                        
-        </ul>
-        
+          </ul>
+      
     </nav>
   );
 };

@@ -23,32 +23,32 @@ const Home = () => {
   }, []);
 
     return (
-        <>  
+      <main>  
             <BannerHome />          
 
         {/* Affichage des éléments Carte Logements sur la page d'acceuil via les résultats du Fetch */}
         
-        <main className="cards">
-        {data.map((logements) => (       
-          <NavLink
-            to={"/logements/" + logements.id}
-            className="linkCard"
-            key={logements.id}
-          >
-            <article className="logements">
-              <img
+        <section className="cards">
+          {data.map((logements) => (       
+           <NavLink
+              to={"/logements/" + logements.id}
+              className="linkCard"
+              key={logements.id}
+            >
+              <article className="logements">
+                <img
                 src={logements.cover}
                 alt={logements.title}
                 className="img-logements"
-              />
-              <h2 className="titre-logements">{logements.title}</h2>
-            </article>
+                />
+                <h2 className="titre-logements">{logements.title}</h2>
+              </article>
           </NavLink>
-        ))}
-      </main>
-        </>
+          ))}
+        </section>
+     </main>
       
-    );
+      );
 };
 
 export default Home;

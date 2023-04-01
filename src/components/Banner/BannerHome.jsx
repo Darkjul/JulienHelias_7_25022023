@@ -7,6 +7,7 @@ import bannerHome from '../../assets/banner.jpg';
 // Contante HomeBanner qui va afficher les éléments des bannières de Kaza via Props
 
 const HomeBanner = () => {
+    
     return(
         <Banner
             title='Chez vous, partout et ailleurs'

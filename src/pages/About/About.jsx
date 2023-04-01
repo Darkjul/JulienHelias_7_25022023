@@ -34,23 +34,23 @@ const About = () => {
 	]
 
     return (
-        <> 
-         <div className='banner-container'>             
+		<main> 
+			
+         <section className='banner-container'>             
                 <BannerAbout />
-         </div> 
+         </section> 
 
-
-         <main className='about_main'>
+         <section className='about_main'>
 				{infosAbout.map(data => {
 					return (
-						<div key={data.id} className="about_main_collapse">
+						<article key={data.id} className="about_main_collapse">
 							<Collapse style={{margin:'30px 0'}}  title={data.title} description={data.description} />
-						</div>
+						</article>
 					)}
 				)}
-			</main>    
+		</section>    
                  
-        </>             
+        </main>             
     );
 };
 

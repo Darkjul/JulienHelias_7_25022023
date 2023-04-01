@@ -7,6 +7,7 @@ import bannerAbout from '../../assets/banner-about.png';
 // Contante BannerAbout qui va afficher les éléments de la bannière de la page A Propos
 
 const BannerAbout = () => {
+    
     return(
         <Banner
             title=''
