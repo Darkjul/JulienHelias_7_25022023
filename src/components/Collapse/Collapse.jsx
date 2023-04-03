@@ -10,8 +10,8 @@ const Collapse = ({ title, description }) =>  {
     const [toggle, setToggle] = useState(false);
 
     return (
-        <main>
-            <section className="collapse" >
+        
+            <article className="collapse" >
                 <h3 className='collapse_title' onClick={() => setToggle(!toggle)} >
                     {title}
                     <img 
@@ -20,16 +20,17 @@ const Collapse = ({ title, description }) =>  {
                         alt="Afficher Infos" 
                     />
                 </h3>
-                <article className={toggle ? 'collapse_description' : 'collapse_description_hidden'}>
+            
+                <p className={toggle ? 'collapse_description' : 'collapse_description_hidden'}>
                     {Array.isArray(description) ? description.map((item, index) => {
                         return (
                             <p key={index}>{item}</p>
                         )
                     }) : description
                     }
-                </article> 
-            </section>
-        </main>
+                </p> 
+            </article>
+        
     )
 }
 

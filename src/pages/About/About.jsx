@@ -2,7 +2,8 @@
 
 import React from 'react';
 import Collapse from '../../components/Collapse/Collapse';
-import BannerAbout from '../../components/Banner/BannerAbout';
+import bannerAbout from '../../assets/banner-about.png';
+import Banner from '../../components/Banner/Banner';
 
 // Contante About qui va afficher les éléments de la page A Propos
 
@@ -34,23 +35,25 @@ const About = () => {
 	]
 
     return (
-		<main> 
-			
-         <section className='banner-container'>             
-                <BannerAbout />
-         </section> 
+		<main> 		
+                  
+                <Banner
+            title=''
+            src={bannerAbout}
+            alt='Paysage Montagneux'
+        />
+         
 
-         <section className='about_main'>
+         <section className='about_main_collapse'>
 				{infosAbout.map(data => {
-					return (
-						<article key={data.id} className="about_main_collapse">
-							<Collapse style={{margin:'30px 0'}}  title={data.title} description={data.description} />
-						</article>
+					return (						
+							<Collapse key={data.id} style={{margin:'30px 0'}}  title={data.title} description={data.description} />
+						
 					)}
 				)}
 		</section>    
                  
-        </main>             
+        </main>           
     );
 };
 
