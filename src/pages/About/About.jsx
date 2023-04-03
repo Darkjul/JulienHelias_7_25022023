@@ -39,7 +39,7 @@ const About = () => {
                   
                 <Banner
             title=''
-            src={bannerAbout}
+            image={bannerAbout}
             alt='Paysage Montagneux'
         />
          
