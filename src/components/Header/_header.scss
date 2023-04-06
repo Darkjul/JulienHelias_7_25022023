@@ -30,6 +30,11 @@
     margin-bottom: 5px;
     padding-bottom: 10px;
     }
+
+   @media screen and (min-width: 501px) and (max-width: 900px) {        
+        width: 180px;
+        height: 58px;
+      }    
 }
 
 .nav {  
@@ -69,6 +74,6 @@
     padding-left: 10px;
     padding-bottom: 20px;
     text-transform: uppercase;
-    }
+    } 
 }
 
