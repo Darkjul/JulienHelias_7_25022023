@@ -1,17 +1,16 @@
 // Style SCSS des composants Collapse de la page About
 
-.collapse {    
-    max-width: 1100px;
+.collapse { 
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     margin: 0 auto;
     margin-bottom: 40px;
 
-     @media screen and (max-width: 500px){
+     @media screen and (max-width: 600px){
                 margin-bottom: 15px;                   
             }
 
-     @media screen and (min-width: 501px) and (max-width: 900px) {        
+     @media screen and (min-width: 601px) and (max-width: 900px) {        
         margin-bottom: 25px;
         margin-top: 15px;
       }        
@@ -22,7 +21,7 @@
         width: 24px;
         height: 13.71px;
 
-        @media screen and (max-width: 500px){
+        @media screen and (max-width: 600px){
                 width: 16px;
                 height: 9.14px;    
             }
@@ -40,7 +39,7 @@
         padding: 10px 15px;
         cursor: pointer;
 
-         @media screen and (max-width: 500px){
+         @media screen and (max-width: 600px){
                 font-weight: 500;
                 font-size: 13px;                    
             }
@@ -76,7 +75,7 @@
                     opacity 0.5s ease-in-out,
                     height 0.2s ease-in-out;
 
-            @media screen and (max-width: 500px){
+            @media screen and (max-width: 600px){
                 font-weight: 400;
                 font-size: 12px;    
             }        
