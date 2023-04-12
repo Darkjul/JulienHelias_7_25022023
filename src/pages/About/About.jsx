@@ -37,7 +37,7 @@ const About = () => {
     return (
 		<main> 		
                   
-                <Banner
+            <Banner moreclass="banner_about"
             title=''
             image={bannerAbout}
             alt='Paysage Montagneux'

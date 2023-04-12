@@ -44,7 +44,7 @@
         height: 200px;
         width: 100%;
       }
-    }  
+    }   
 
     @media screen and (max-width: 600px) {         
          border-radius: 10px;
@@ -57,4 +57,12 @@
         border-radius: 10px;
       }   
  
+}
+
+.banner_about {
+
+  @media screen and (max-width: 600px) {         
+  width: 90%;
+  height: 223px;       
+      }  
 }

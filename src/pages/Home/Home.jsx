@@ -25,7 +25,7 @@ const Home = () => {
 
     return (
       <main>  
-             <Banner
+             <Banner className="banner"
             title='Chez vous, partout et ailleurs'
             image={bannerHome}
             alt='Paysage Rocheux'
