@@ -66,6 +66,11 @@
   &:hover {
     text-decoration-line: underline;
     color: $primary-color;
+  } 
+
+  &:focus {
+    text-decoration: underline;    
+    color: $primary-color;
   }
 
   @media screen and (max-width: 600px) {
