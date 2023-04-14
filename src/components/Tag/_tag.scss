@@ -1,0 +1,50 @@
+// Style SCSS du composant Tag
+
+.tagContainer {
+    display: flex;
+}
+
+.tagButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $primary-color;
+    color: $tertiary-color;
+    margin-top: 4%;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    height: 18px;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 2px 10px 0 10px;
+}
+
+.title-tags-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        margin: 2% 0;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;        
+    }
+
+    h3 {
+        margin: 2% 0;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;      
+    }
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}

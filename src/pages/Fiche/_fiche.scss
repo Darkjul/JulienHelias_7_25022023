@@ -1,0 +1,17 @@
+// Style SCSS de la page Fiche logement individuel
+
+.redFont {
+	color: $primary-color;
+}
+
+.fiche-container {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	flex-direction: column;
+}
+
+.title-container {
+	display: flex;
+	flex-direction: column;
+}
