@@ -44,18 +44,6 @@
     opacity: 1;
 }
 
-.black-mask {
-	background: $tertiary-color;
-	mix-blend-mode: darken;
-	border-radius: 25px;
-}
-
-.white-mask {
-	background: $secondary-color;
-	border-radius: 10px;
-
-}
-
 .rightArrow {
     display: flex;
     position: absolute;

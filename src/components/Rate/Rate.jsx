@@ -12,14 +12,14 @@ const Rate = ({ score }) => {
 			{stars.map((level) =>
 				score >= level ? (
 					<img
-						key={level.toString()}
+						key={level}
 						className="star"
 						src={fullStar}
 						alt="Etoile rouge pleine"
 					/>
 				) : ( // Affichage conditionnel du score du logement, pleine ou vide selon le score passé en props
 					<img
-						key={level.toString()}
+						key={level}
 						className="star"
 						src={emptyStar}
 						alt="Etoile grise vide"

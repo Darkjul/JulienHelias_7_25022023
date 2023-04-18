@@ -17,6 +17,7 @@ const Fiche = () => {
 	useEffect(() => {
 
 		const displayLog = async () => { 
+		
 			const res = await axios.get("/logements.json"); 
 			const logement = res.data.find(({ id }) => id === params.id);
 			res.data.map(() => setdata(logement));
@@ -74,10 +75,10 @@ const Fiche = () => {
 				</section>
 				<section className="collapse-fiche-container">
 					<Collapse
-						aboutTitle="Description"
-						aboutText={data.description}
+						title="Description"
+						description={data.description}
 					/>
-					<Collapse aboutTitle="Équipements" aboutText={equip} />
+					<Collapse title="Équipements" description={equip} />
 				</section>
 			</main>
 		)
