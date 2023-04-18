@@ -55,6 +55,14 @@
 
   color: $primary-color;
   list-style-type: none; 
+
+  &_item{
+        &_active{
+            position: relative;                        
+            text-decoration: underline solid $primary-color;                        
+        }
+    }
+
 }
 
 .navlink {
@@ -68,10 +76,10 @@
     color: $primary-color;
   } 
 
-  &:focus {
+  /*&:focus {
     text-decoration: underline;    
     color: $primary-color;
-  }
+  }*/
 
   @media screen and (max-width: 600px) {
     font-size: 12px;
