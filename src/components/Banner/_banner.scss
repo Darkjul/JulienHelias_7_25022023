@@ -60,6 +60,12 @@
 }
 
 .banner_about {
+  width: 95%;
+    height: 223px;      
+    margin: 20px auto;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
   @media screen and (max-width: 600px) {         
   width: 90%;

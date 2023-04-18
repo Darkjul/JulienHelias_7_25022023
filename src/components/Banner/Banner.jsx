@@ -2,13 +2,28 @@
 
 import React from 'react';
 import PropTypes from "prop-types";
+import { useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 // Contante Banner qui va afficher les éléments des bannières de Kaza via Props
 
-const Banner = ({ image, alt, title, children, moreclass }) => {
+const Banner = ({ image, alt, title }) => {
+
+// Contantes qui vont servir à checker si on se trouve sur la page Aboiut pour gérer l'affchage des différentes version de la bannière
+    
+    const [checkAboutPage, setCheckAboutPage] = useState(false); 
+
+	const location = useLocation();
+	
+	useEffect(() => {
+		if(location.pathname === '/about'){
+			setCheckAboutPage(true)
+		};
+		// eslint-disable-next-line
+	}, [])
     
     return(
-        <section className={`banner ${moreclass}`}>{children}
+        <section className={checkAboutPage ? 'banner_about' : 'banner'}>
             <h1 className="banner_title">{title}</h1>
             <img src={image} alt={alt} className='banner_image' />
         </section>
