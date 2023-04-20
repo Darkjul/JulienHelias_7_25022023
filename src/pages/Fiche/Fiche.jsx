@@ -76,9 +76,12 @@ const Fiche = () => {
 				<section className="collapse-fiche-container">
 					<Collapse
 						title="Description"
-						description={data.description}
+						description={data.description}						
 					/>
-					<Collapse title="Équipements" description={equip} />
+					<Collapse
+						title="Équipements"
+						description={equip}						
+					/>
 				</section>
 			</main>
 		)
