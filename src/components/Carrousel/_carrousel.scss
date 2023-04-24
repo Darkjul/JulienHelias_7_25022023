@@ -5,13 +5,15 @@
     position: relative;
     width: 90%;
     height: 415px;
-    margin: 2% 0;
+    margin-top: 2%;
+    margin-bottom: 0;
     overflow: hidden;
 }
 
  .img-logement {
     width: 100%;
-    object-fit: cover;    
+    object-fit: cover;
+    border-radius: 20px;    
  }   
 
 .active-anim {
