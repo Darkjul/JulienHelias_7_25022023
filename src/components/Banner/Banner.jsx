@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react';
 
 const Banner = ({ image, alt, title }) => {
 
-// Contantes qui vont servir à checker si on se trouve sur la page Aboiut pour gérer l'affchage des différentes version de la bannière
+// Contantes qui vont servir à checker si on se trouve sur la page About pour gérer l'affichage des différentes version de la bannière (HOOKS)
     
     const [checkAboutPage, setCheckAboutPage] = useState(false); 
 
