@@ -3,6 +3,8 @@
 import emptyStar from "../../assets/grey_star.png";
 import fullStar from "../../assets/red_star.png";
 
+// Composants Rate de la Page Fiche Logement Individuel
+
 const Rate = ({ score }) => { 
 
 	const stars = [1, 2, 3, 4, 5];

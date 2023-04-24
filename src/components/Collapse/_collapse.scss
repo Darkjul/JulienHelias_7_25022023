@@ -5,6 +5,8 @@
     border-bottom-right-radius: 5px;
     margin: 0 auto;
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
 
      @media screen and (max-width: 600px){
                 margin-bottom: 15px;                   
@@ -61,6 +63,7 @@
     &_description { 
         display: flex;
         flex-direction: column;
+        flex-grow: 1;
         background-color: $secondary-color;
         gap: 5px;
         letter-spacing: 1px;

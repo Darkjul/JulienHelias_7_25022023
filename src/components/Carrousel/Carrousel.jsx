@@ -18,7 +18,10 @@ const Carrousel = ({ slides }) => {
 
 	return (
 
-		<section style={{backgroundImage : `url(${slides[current]})`}} id="carrousel-container">
+        <section id="carrousel-container">
+            
+            <img className="img-logement" src={slides[current]} alt="Images de logements à louer" />
+
             {slides.length > 1 && 
                 <>
                     <img 
@@ -38,6 +41,7 @@ const Carrousel = ({ slides }) => {
                     <p className='slideCount'> {current + 1} / {slides.length}</p>
                 </>
             } 
+    
         </section>
 	);
 	

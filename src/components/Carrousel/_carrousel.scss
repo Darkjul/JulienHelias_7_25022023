@@ -9,6 +9,10 @@
     overflow: hidden;
 }
 
+ .img-logement {
+    width: 100%;
+    object-fit: cover;    
+ }   
 
 .active-anim {
     opacity: 1;

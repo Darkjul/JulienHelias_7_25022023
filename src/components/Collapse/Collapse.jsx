@@ -24,7 +24,7 @@ const Collapse = ({ title, description }) =>  {
                 <p className={toggle ? 'collapse_description' : 'collapse_description_hidden'}>
                     {Array.isArray(description) ? description.map((item, index) => {
                         return (
-                            <p key={index}>{item}</p>
+                            <span key={index}>{item} </span>
                         )
                     }) : description
                     }
