@@ -3,9 +3,13 @@
 .rate-comp {
     display: flex;
     justify-content: space-between;
-    width: 120px;
+    width: 170px;
     height: 18px;
     margin-bottom: 18px;   
+
+    @media screen and (max-width: 600px) {
+           width: 100px;             
+    } 
 }
 
 .rate-container {
@@ -15,6 +19,11 @@
 }
 
 .star {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
+
+     @media screen and (max-width: 600px) {
+           width: 13px;
+           height: 13px;   
+    } 
 }
