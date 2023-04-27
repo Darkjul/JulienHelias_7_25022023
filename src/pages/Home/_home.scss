@@ -9,7 +9,7 @@
     border-radius: 25px;
     padding-left: 30px;
     padding-right: 30px;
-    width: 95%;    
+    width: 92%;    
     margin: auto;   
 
     @media screen and (min-width: 601px) and (max-width: 1200px) {        
@@ -59,9 +59,9 @@
     overflow: hidden;
     transition : box-shadow 0.2s ease-in-out;   
 
-    &:hover {
+    /*&:hover {
         box-shadow: 0 2px 8px rgb(0, 0, 0);
-        }      
+        } */     
 
     @media screen and (min-width: 601px) and (max-width: 1200px) {
         width: 100%;    

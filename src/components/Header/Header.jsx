@@ -1,14 +1,14 @@
 // Import des éléments nécéssaires au fonctionnement de Header.jsx
 
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import Logo from "../../assets/logo.jpg"
 
 // Contante Header qui va afficher les éléments du Header
 
 const Header = () => {
 
-  const actualRoute = window.location.pathname; 
+  const actualRoute = useLocation().pathname; 
 
   return (
     
