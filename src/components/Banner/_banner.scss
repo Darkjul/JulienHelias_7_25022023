@@ -1,9 +1,8 @@
 // Style SCSS des composants de la bannière
 
-.banner {
-    width: 95%;
+.banner {    
     height: 223px;      
-    margin: 20px auto;    
+    margin: 20px;    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,15 +59,15 @@
 }
 
 .banner_about {
-  width: 95%;
+    //width: 95%;
     height: 223px;      
-    margin: 20px auto;    
+    margin: 20px;     
     display: flex;
     justify-content: center;
     align-items: center;
 
   @media screen and (max-width: 600px) {         
-  width: 90%;
+  //width: 90%;
   height: 223px;       
       }  
 }

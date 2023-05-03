@@ -36,18 +36,21 @@ const Home = () => {
         <section className="cards">
           
           {data.map((logements) => (      
-           <article className="logements"> 
+            <article className="logements" key={logements.id}>              
+              
            <NavLink
               to={"/logements/" + logements.id}
               className="linkCard"
-              key={logements.id}
+              
             >
                <img
                 src={logements.cover}
                 alt={logements.title}
                 className="img-logements"
                 />
-                <h2 className="titre-logements">{logements.title}</h2>
+                <div className="overlay">
+                  <h2 className="titre-logements">{logements.title}</h2>
+                </div>
               
             </NavLink>
             </article>
