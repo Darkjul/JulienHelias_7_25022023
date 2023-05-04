@@ -3,7 +3,7 @@
 #carrousel-container {
     display: flex;
     position: relative;
-    width: 95%;
+    width: 100%;
     height: 415px;
     margin-top: 2%;
     margin-bottom: 0;
@@ -16,13 +16,14 @@
 }
 
  .img-logement {
-    width: 100%;
-    //height: 100%;
+    width: 100%;    
     object-fit: cover;
-    border-radius: 20px;    
+    border-radius: 20px;
+    margin: 0 20px 0 20px;    
     
     @media screen and (max-width: 600px){
                 border-radius: 10px;
+                margin: 0;
             }  
  }   
 
@@ -34,23 +35,49 @@
     display: flex;
     position: absolute;
     top: 47%;
-    right: 2%;
-    width: 12px;
-    height: 20px;
+    right: 5%;
+    width: 46px;
+    height: 80px;
     z-index: 10;
     cursor: pointer;
+
+    @media screen and (min-width: 601px) and (max-width: 900px) {        
+        right: 4%;
+        width: 24px;
+        height: 40px;
+      }   
+      
+     @media screen and (max-width: 600px) {        
+        right: 1%;
+        width: 12px;
+        height: 20px;        
+      }      
+        
 }
 
 .leftArrow {
     display: flex;
     position: absolute;
     top: 47%;
-    left: 2%;
-    width: 12px;
-    height: 20px;
+    left: 5%;
+    width: 46px;
+    height: 80px;
     z-index: 10;
     cursor: pointer;
-}
+
+    @media screen and (min-width: 601px) and (max-width: 900px) {        
+        left: 4%;
+        width: 24px;
+        height: 40px;
+      }   
+      
+     @media screen and (max-width: 600px) {        
+        left: 1%;
+        width: 12px;
+        height: 20px;        
+      }     
+     
+    }
 
 .slideCount{
         position: absolute;
