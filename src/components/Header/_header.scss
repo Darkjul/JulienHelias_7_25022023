@@ -9,22 +9,21 @@
   height: 68px;
   margin: 40px 20px;
 
-   @media screen and (max-width: 600px) {
-        width: 90%;
-        margin: 20px auto -19px;
-    }
+  @media screen and (max-width: 600px) {
+    width: 90%;
+    margin: 20px auto -19px;
+  }
 
-   @media screen and (min-width: 601px) and (max-width: 900px) {        
-        margin: 20px 20px 0 20px;
-    }    
-
+  @media screen and (min-width: 601px) and (max-width: 900px) {        
+    margin: 20px 20px 0 20px;
+  }   
 }
 
 .logo{
-    width: 210px;
-    height: 68px;
+  width: 210px;
+  height: 68px;
 
-    @media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     display: block;
     width: 145px;
     height: 47px;
@@ -32,12 +31,12 @@
     margin-left: -15px;
     margin-bottom: 5px;
     padding-bottom: 10px;
-    }
+  }
 
-   @media screen and (min-width: 601px) and (max-width: 900px) {        
-        width: 180px;
-        height: 58px;
-      }    
+  @media screen and (min-width: 601px) and (max-width: 900px) {        
+    width: 180px;
+    height: 58px;
+  }    
 }
 
 .nav {  
@@ -59,13 +58,12 @@
   color: $primary-color;
   list-style-type: none; 
 
-  &_item{
-        &_active{
-            position: relative;                        
-            text-decoration: underline solid $primary-color;                        
-        }
+  &_item {
+    &_active{
+     position: relative;                        
+     text-decoration: underline solid $primary-color;                        
     }
-
+  }
 }
 
 .navlink {
@@ -85,6 +83,6 @@
     padding-left: 10px;
     padding-bottom: 20px;
     text-transform: uppercase;
-    } 
+  } 
 }
 

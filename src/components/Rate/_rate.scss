@@ -1,29 +1,29 @@
 // Style SCSS du composant Rate
 
 .rate-comp {
-    display: flex;
-    justify-content: space-between;
-    width: 170px;
-    height: 18px;
-    margin-bottom: 18px;   
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
+  height: 18px;
+  margin-bottom: 18px;   
 
-    @media screen and (max-width: 600px) {
-           width: 100px;             
-    } 
+   @media screen and (max-width: 600px) {
+     width: 100px;             
+   } 
 }
 
 .rate-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
 }
 
 .star {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 
-     @media screen and (max-width: 600px) {
-           width: 13px;
-           height: 13px;   
-    } 
+   @media screen and (max-width: 600px) {
+     width: 13px;
+     height: 13px;   
+   } 
 }

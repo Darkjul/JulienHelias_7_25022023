@@ -1,27 +1,26 @@
 // Style SCSS des composants du Footer
 
 .footer {
-    position: relative;
-	top : 20px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-	gap : 20px;	
-    background-color: $footer-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    //margin: 0 20px;
-    
+ position: relative;
+ top : 20px;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ gap : 20px;	
+ background-color: $footer-color;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+     
     &_logo {
-        margin-top: 35px;
-        width: 80px;
+     margin-top: 35px;
+     width: 80px;
     }
     
     &_copyright {
-        color: $secondary-color;
-        font-size: 15px;
-        margin-bottom: 35px;
+     color: $secondary-color;
+     font-size: 15px;
+     margin-bottom: 35px;
     }
 }

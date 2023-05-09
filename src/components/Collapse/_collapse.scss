@@ -1,94 +1,93 @@
 // Style SCSS des composants Collapse de la page About
 
 .collapse { 
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    margin: 0 auto;
-    margin-bottom: 40px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 600px) {
+    margin-bottom: 15px;                   
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 900px) {        
+    margin-bottom: 25px;
+    margin-top: 15px;
+  }        
+
+  img { 
     display: flex;
-    flex-direction: column;
+    align-self: center;
+    width: 24px;
+    height: 13.71px;
 
-     @media screen and (max-width: 600px){
-                margin-bottom: 15px;                   
-            }
-
-     @media screen and (min-width: 601px) and (max-width: 900px) {        
-        margin-bottom: 25px;
-        margin-top: 15px;
-      }        
-
-    img { 
-        display: flex;
-        align-self: center;
-        width: 24px;
-        height: 13.71px;
-
-        @media screen and (max-width: 600px){
-                width: 16px;
-                height: 9.14px;    
-            }
-    }
+    @media screen and (max-width: 600px) {
+      width: 16px;
+      height: 9.14px;    
+    }  
 
     &_title {
-        display: flex;
-        justify-content: space-between;        
-        background-color: $primary-color;
-        color: $tertiary-color;
-        border-radius: 5px;
+      display: flex;
+      justify-content: space-between;        
+      background-color: $primary-color;
+      color: $tertiary-color;
+      border-radius: 5px;
+      font-weight: 500;
+      font-size: 18px;
+      margin : 0;
+      padding: 10px 15px;
+      cursor: pointer;
+
+      @media screen and (max-width: 600px){
         font-weight: 500;
-        font-size: 18px;
-        margin : 0;
-        padding: 10px 15px;
-        cursor: pointer;
-
-         @media screen and (max-width: 600px){
-                font-weight: 500;
-                font-size: 13px;                    
-            }
+        font-size: 13px;                    
+      }
         
-        .arrow {
-            transition: all 0.2s ease-in-out;           
-             
-        }
+      .arrow {
+        transition: all 0.2s ease-in-out;          
+      }
 
-        .arrow_up {
-            transform: rotate(0deg);
-        }
+      .arrow_up {
+        transform: rotate(0deg);
+      }
 
-        .arrow_down {
-            transform: rotate(180deg);
-        }
+      .arrow_down {
+        transform: rotate(180deg);
+      }
     }
 
     &_description { 
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-        background-color: $secondary-color;
-        gap: 5px;
-        letter-spacing: 1px;
-        visibility: visible;
-        opacity: 1;
-        height: auto;
-        margin: 0;
-        padding: 20px;        
-        font-size: 16px;
-        color: $primary-color;
-        transition: visibility 0.5s ease-in-out,
-                    opacity 0.5s ease-in-out,
-                    height 0.2s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      background-color: $secondary-color;
+      gap: 5px;
+      letter-spacing: 1px;
+      visibility: visible;
+      opacity: 1;
+      height: auto;
+      margin: 0;
+      padding: 20px;        
+      font-size: 16px;
+      color: $primary-color;
+      transition: visibility 0.5s ease-in-out,
+                  opacity 0.5s ease-in-out,
+                  height 0.2s ease-in-out;
 
-            @media screen and (max-width: 600px){
-                font-weight: 400;
-                font-size: 12px;    
-            }        
+      @media screen and (max-width: 600px){
+        font-weight: 400;
+        font-size: 12px;    
+      }        
     }
 
     &_description_hidden {
-        visibility: hidden;
-        opacity: 0;
-        height: 0px;        
+      visibility: hidden;
+      opacity: 0;
+      height: 0px;        
     }
+  }  
 }
 
 .collapse-fiche-container {
@@ -97,20 +96,20 @@
   flex-direction: row;
   justify-content: space-between;
 
-   @media screen and (max-width: 900px) {
-    flex-direction: column;
-    width: 99%;
+  @media screen and (max-width: 900px) {
+   flex-direction: column;
+   width: 99%;
   }
 }
 
 .collapse-fiche-container > .collapse {
   width: 47%;
 
-   @media screen and (min-width: 601px) and (max-width: 900px) {
-    width: 97%;
+  @media screen and (min-width: 601px) and (max-width: 900px) {
+   width: 97%;
   }
 
   @media screen and (max-width: 600px) {
-    width: 92%;
+   width: 92%;
   }
 }

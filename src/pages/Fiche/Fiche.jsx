@@ -8,84 +8,74 @@ import Rate from "../../components/Rate/Rate";
 import Tag from "../../components/Tag/Tag";
 
 const Fiche = () => {
+  const params = useParams();
+  const navigate = useNavigate();
 
-	const params = useParams();
-	const navigate = useNavigate();
+  const [data, setdata] = useState();
 
-	const [data, setdata] = useState(); 
+  useEffect(() => {
+    const displayLog = async () => {
+      const res = await axios.get("/logements.json");
+      const logement = res.data.find(({ id }) => id === params.id);
+      res.data.map(() => setdata(logement));
 
-	useEffect(() => {
+      // Renvoi vers la page Erreur 404 en cas d'URL de logement invalide
 
-		const displayLog = async () => { 
-		
-			const res = await axios.get("/logements.json"); 
-			const logement = res.data.find(({ id }) => id === params.id);
-			res.data.map(() => setdata(logement));
+      if (logement === undefined) {
+        navigate("/404", { state: { message: "Error" } });
+      }
+    };
+    displayLog();
 
-			// Renvoi vers la page Erreur 404 en cas d'URL de logement invalide
+    // eslint-disable-next-line
+  }, []); // Tableau Array vide du useEffect pour ne le lancer qu'une seule fois
 
-			if (logement === undefined) {
-				navigate("/404", { state: { message: "Error" } }); 
-			}
-		};
-		displayLog();
+  const slideImgs = data && data.pictures;
+  const tags = data && data.tags;
+  const equipments = data && data.equipments;
 
-		// eslint-disable-next-line
-	}, []); // Tableau Array vide du useEffect pour ne le lancer qu'une seule fois
+  const equip =
+    data &&
+    equipments.map((item, index) => (
+      <li key={index} className="equipList">
+        {item}
+      </li>
+    ));
 
-	const slideImgs = data && data.pictures; 
-	const tags = data && data.tags;
-	const equipments = data && data.equipments;
-	
-	const equip =
-		data &&
-		equipments.map((item, index) => (
-			<li key={index} className="equipList">
-				{item}
-			</li>
-		));
-	
-	return (
-		data && (
-			<main key={params.id} className="fiche-container">
-				<Carrousel slides={slideImgs} />
-				<section className="hostInfo-container">
-					<div className="title-tags-container">
-						<div className="title-container redFont">
-							<h1>{data.title}</h1>
-							<h3>{data.location}</h3>
-						</div>
-						<div className="tags-container">
-							{tags.map((tag) => (
-								<Tag key={tag} tag={tag} />
-							))}
-						</div>
-					</div>
-					<div className="rate-host-container">
-						<div className="host-container redFont">
-							<Host
-								hostName={data.host.name}
-								hostPic={data.host.picture}
-							/>
-						</div>
-						<div className="rate-container">
-							<Rate score={data.rating} />
-						</div>
-					</div>
-				</section>
-				<section className="collapse-fiche-container">
-					<Collapse
-						title="Description"
-						description={data.description}						
-					/>
-					<Collapse
-						title="Équipements"
-						description={equip}						
-					/>
-				</section>
-			</main>
-		)
-	);
-}
+  // Affichage des éléments composants les informations de la page Fiche Logement, Caroussel, Tag, Host et Rate
+
+  return (
+    data && (
+      <main key={params.id} className="fiche-container">
+        <Carrousel slides={slideImgs} />
+        <section className="hostInfo-container">
+          <div className="title-tags-container">
+            <div className="title-container redFont">
+              <h1>{data.title}</h1>
+              <h3>{data.location}</h3>
+            </div>
+            <div className="tags-container">
+              {tags.map((tag) => (
+                <Tag key={tag} tag={tag} />
+              ))}
+            </div>
+          </div>
+          <div className="rate-host-container">
+            <div className="host-container redFont">
+              <Host hostName={data.host.name} hostPic={data.host.picture} />
+            </div>
+            <div className="rate-container">
+              <Rate score={data.rating} />
+            </div>
+          </div>
+        </section>
+        <section className="collapse-fiche-container">
+          <Collapse title="Description" description={data.description} />
+          <Collapse title="Équipements" description={equip} />
+        </section>
+      </main>
+    )
+  );
+};
 
 export default Fiche;

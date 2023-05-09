@@ -1,73 +1,68 @@
 // Style SCSS des composants de la bannière
 
 .banner {    
-    height: 223px;      
-    margin: 20px;    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 223px;      
+  margin: 20px;    
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    &_title {
-        position: absolute;
-        z-index: 1;
-        color: $tertiary-color;
-        font-family: "Monserrat", sans-serif;
-        font-weight: 500;
-        font-size : 40px;
+  &_title {
+    position: absolute;
+    z-index: 1;
+    color: $tertiary-color;
+    font-family: "Monserrat", sans-serif;
+    font-weight: 500;
+    font-size : 40px;
 
-        @media screen and (max-width: 600px) {
-         font-size: 24px;
-         left: 10%;                 
-         width: 55%;         
-         text-align: left;
-      }
-
-      @media screen and (min-width: 601px) and (max-width: 900px) {        
-        font-size: 35px;
-      }
+    @media screen and (max-width: 600px) {
+     font-size: 24px;
+     left: 10%;                 
+     width: 55%;         
+     text-align: left;
     }
 
-    &_image {
-        position: relative;        
-        width: 100%; 
-        height: 100%;       
-        object-fit: cover;
-        border-radius: 25px;      
-        filter: brightness(0.6);
+    @media screen and (min-width: 601px) and (max-width: 900px) {        
+     font-size: 35px;
+    }
+  }
 
-        @media screen and (max-width: 600px) {
-        border-radius: 10px;       
-      }
+  &_image {
+    position: relative;        
+    width: 100%; 
+    height: 100%;       
+    object-fit: cover;
+    border-radius: 25px;      
+    filter: brightness(0.6);
 
-      @media screen and (min-width: 601px) and (max-width: 900px) {        
-        height: 200px;
-        width: 100%;
-      }
-    }   
+    @media screen and (max-width: 600px) {
+     border-radius: 10px;       
+    }
 
-    @media screen and (max-width: 600px) {         
-         border-radius: 10px;
-         height: 111px;         
-         //margin: 16px 10px 16px 10px;
-      } 
+    @media screen and (min-width: 601px) and (max-width: 900px) {        
+     height: 200px;
+     width: 100%;
+    }
+  }   
 
-    @media screen and (min-width: 601px) and (max-width: 1200px) {        
-        //margin: 20px 10px 20px 10px;
-        border-radius: 10px;
-      }   
- 
+  @media screen and (max-width: 600px) {         
+   border-radius: 10px;
+   height: 111px;        
+  } 
+
+  @media screen and (min-width: 601px) and (max-width: 1200px) {        
+   border-radius: 10px;
+  }   
 }
 
 .banner_about {
-    //width: 95%;
-    height: 223px;      
-    margin: 20px;     
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 223px;      
+  margin: 20px;     
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media screen and (max-width: 600px) {         
-  //width: 90%;
-  height: 223px;       
-      }  
+   height: 223px;       
+  }  
 }

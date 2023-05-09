@@ -1,28 +1,27 @@
 // Style SCSS de la page d'acceuil
 
-  .cards{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;    
-    background-color: $secondary-color;   
-    border-radius: 25px;
-    padding-left: 30px;
-    padding-right: 30px;       
-    margin: 0 20px;   
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;    
+  background-color: $secondary-color;   
+  border-radius: 25px;
+  padding-left: 30px;
+  padding-right: 30px;       
+  margin: 0 20px;   
 
-    @media screen and (min-width: 601px) and (max-width: 1200px) {            
-         padding: 10px;
-         background-color: $secondary-color;
-      }  
+  @media screen and (min-width: 601px) and (max-width: 1200px) {            
+     padding: 10px;
+     background-color: $secondary-color;
+  }  
 
-    @media screen and (max-width: 600px){  
-        flex-direction: column;
-        padding: 0;
-        margin-top: 22px;
-        background-color: $tertiary-color ;
-        
-    }
+  @media screen and (max-width: 600px) {  
+     flex-direction: column;
+     padding: 0;
+     margin-top: 22px;
+     background-color: $tertiary-color;        
+  }
 }
 
 .logements {
@@ -34,75 +33,71 @@
   margin-bottom: 30px;  
   width: 30%;  
 
-    @media screen and (min-width: 601px) and (max-width: 1200px) {
-        width: 47%;        
-        margin-top: 10px;
-        margin-bottom: 10px;    
-    }
+  @media screen and (min-width: 601px) and (max-width: 1200px) {
+     width: 47%;        
+     margin-top: 10px;
+     margin-bottom: 10px;    
+   }
 
-    @media screen and (max-width: 600px) {
-        height: 250px;
-        width: 100%; 
-    }
+  @media screen and (max-width: 600px) {
+     height: 250px;
+     width: 100%; 
+   }
 }
 
 .linkCard {
-    position: relative;        
-    height: 340px;
-    width: 100%;
-    border-radius: 10px;    
-    background: $primary-color;    
-    cursor: pointer;
-    overflow: hidden;
-    transition : box-shadow 0.2s ease-in-out;   
-      
+  position: relative;        
+  height: 340px;
+  width: 100%;
+  border-radius: 10px;    
+  background: $primary-color;    
+  cursor: pointer;
+  overflow: hidden;
+  transition : box-shadow 0.2s ease-in-out;        
 
     @media screen and (min-width: 601px) and (max-width: 1200px) {
-        width: 100%;    
+     width: 100%;    
     }
 
     @media screen and (max-width: 600px) {
-        width: 100%;
-        height: 250px;
-    }
-  
+     width: 100%;
+     height: 250px;
+    }  
 }
 
 .img-logements {              
-        width: 100%;
-        height: 100%;
-        background: $primary-color;
-        object-fit: cover;
-        object-position: center;      
+  width: 100%;
+  height: 100%;
+  background: $primary-color;
+  object-fit: cover;
+  object-position: center;      
    
     @media screen and (min-width: 601px) and (max-width: 900px) {
-        width: 100%;    
+     width: 100%;    
     }
 
     @media screen and (max-width: 600px) {
-        width: 100%;
-        height: 100%;
-    }
-    
-    }
+     width: 100%;
+     height: 100%;
+    }    
+}
 
- .overlay {
-    position: absolute;
-    top: 0;
-    background: $color-gradient;
-    height: 100%;
-    width: 100%;
-    border-radius: inherit;
-  }    
+.overlay {
+  position: absolute;
+  top: 0;
+  background: $color-gradient;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;  
+}    
 
 .titre-logements {
-        z-index: 20;
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
-        right: 20px;
-        font-weight: 500;
-        font-size: 18px;
-        color: $secondary-color;    
-        
-    }
+  z-index: 20;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  color: $secondary-color;            
+}
