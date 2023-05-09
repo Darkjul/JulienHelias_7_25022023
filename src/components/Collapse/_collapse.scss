@@ -9,7 +9,7 @@
   flex-direction: column;
 
   @media screen and (max-width: 600px) {
-    margin-bottom: 15px;                   
+   margin-bottom: 15px;                   
   }
 
   @media screen and (min-width: 601px) and (max-width: 900px) {        
@@ -24,70 +24,70 @@
     height: 13.71px;
 
     @media screen and (max-width: 600px) {
-      width: 16px;
-      height: 9.14px;    
-    }  
+     width: 16px;
+     height: 9.14px;    
+    }
+  }
 
-    &_title {
-      display: flex;
-      justify-content: space-between;        
-      background-color: $primary-color;
-      color: $tertiary-color;
-      border-radius: 5px;
-      font-weight: 500;
-      font-size: 18px;
-      margin : 0;
-      padding: 10px 15px;
-      cursor: pointer;
+  &_title {
+    display: flex;
+    justify-content: space-between;        
+    background-color: $primary-color;
+    color: $tertiary-color;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 18px;
+    margin : 0;
+    padding: 10px 15px;
+    cursor: pointer;
 
-      @media screen and (max-width: 600px){
-        font-weight: 500;
-        font-size: 13px;                    
-      }
+    @media screen and (max-width: 600px){
+     font-weight: 500;
+     font-size: 13px;                    
+    }
         
-      .arrow {
-        transition: all 0.2s ease-in-out;          
-      }
-
-      .arrow_up {
-        transform: rotate(0deg);
-      }
-
-      .arrow_down {
-        transform: rotate(180deg);
-      }
+    .arrow {
+     transition: all 0.2s ease-in-out;                 
     }
 
-    &_description { 
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-      background-color: $secondary-color;
-      gap: 5px;
-      letter-spacing: 1px;
-      visibility: visible;
-      opacity: 1;
-      height: auto;
-      margin: 0;
-      padding: 20px;        
-      font-size: 16px;
-      color: $primary-color;
-      transition: visibility 0.5s ease-in-out,
-                  opacity 0.5s ease-in-out,
-                  height 0.2s ease-in-out;
-
-      @media screen and (max-width: 600px){
-        font-weight: 400;
-        font-size: 12px;    
-      }        
+    .arrow_up {
+     transform: rotate(0deg);
     }
 
-    &_description_hidden {
-      visibility: hidden;
-      opacity: 0;
-      height: 0px;        
+    .arrow_down {
+     transform: rotate(180deg);
     }
-  }  
+  }
+
+  &_description { 
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: $secondary-color;
+    gap: 5px;
+    letter-spacing: 1px;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    margin: 0;
+    padding: 20px;        
+    font-size: 16px;
+    color: $primary-color;
+    transition: visibility 0.5s ease-in-out,
+                opacity 0.5s ease-in-out,
+                height 0.2s ease-in-out;
+
+    @media screen and (max-width: 600px) {
+     font-weight: 400;
+     font-size: 12px;    
+    }        
+  }
+
+  &_description_hidden {
+    visibility: hidden;
+    opacity: 0;
+    height: 0px;        
+  }
 }
 
 .collapse-fiche-container {
