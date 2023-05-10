@@ -16,7 +16,12 @@
 
   @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {        
    margin: 20px 20px 0 20px;
-  }   
+  }
+  
+  @media screen and (min-width: map-get($breakpoints, breakhome)) {
+   margin-left: 125px;
+   margin-right: 125px;   
+  }
 }
 
 .logo{
