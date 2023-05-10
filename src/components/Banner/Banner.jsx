@@ -29,7 +29,7 @@ const Banner = ({ image, alt, title }) => {
   );
 };
 
-// Props utilisé pour le composant Banner.jsx
+// Props utilisées pour le composant Banner.jsx
 
 Banner.propTypes = {
   image: PropTypes.string.isRequired,

@@ -16,7 +16,7 @@ const Host = ({ hostName, hostPic }) => {
   );
 };
 
-// Props utilisé pour le composant Host.jsx
+// Props utilisées pour le composant Host.jsx
 
 Host.propTypes = {
   hostName: PropTypes.string.isRequired,
