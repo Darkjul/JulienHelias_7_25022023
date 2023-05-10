@@ -24,7 +24,7 @@
 	 object-fit: cover;
 	}
 
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: map-get($breakpoints, mobile)) {
    width: 32px;
 	 height: 32px;   
   } 
@@ -43,7 +43,7 @@
  line-height: 142.6%;
  margin-top: 10px;
 
-   @media screen and (max-width: 600px) {
+   @media screen and (max-width: map-get($breakpoints, mobile)) {
      font-size: 12px;   
    }
 }
@@ -53,7 +53,7 @@
  flex-direction: column;
  justify-content: space-between;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
    flex-direction: row-reverse;
 	 justify-content: space-between;  
 	 align-items: flex-end;
@@ -68,11 +68,11 @@
  justify-content: space-between;	
  margin-bottom: 20px;		
 
-  @media screen and (min-width: 601px) and (max-width: 900px) {        
+  @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {        
     width: 95%;
   }  
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
    flex-direction: column;
    justify-content: space-between;	
    width: 90%;

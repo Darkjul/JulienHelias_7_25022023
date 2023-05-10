@@ -4,11 +4,11 @@
   width: 85%;
   margin: 0 auto;  
 
-  @media screen and (max-width: 600px) {          
+  @media screen and (max-width: map-get($breakpoints, mobile)) {          
    width: 92%;
   }
     
-  @media screen and (min-width: 601px) and (max-width: 900px) {        
+  @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {        
    width : 94%;
   }        
 }

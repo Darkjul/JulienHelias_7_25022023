@@ -9,7 +9,7 @@
   margin-bottom: 0;
   overflow: hidden;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
    height: 255px;  
    width: 90%; 
   }    
@@ -21,7 +21,7 @@
   border-radius: 20px;
   margin: 0 20px 0 20px;    
     
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
    border-radius: 10px;
    margin: 0;
   }  
@@ -41,13 +41,13 @@
   z-index: 10;
   cursor: pointer;
 
-  @media screen and (min-width: 601px) and (max-width: 900px) {        
+  @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {        
    right: 4%;
    width: 24px;
    height: 40px;
   }   
       
-  @media screen and (max-width: 600px) {        
+  @media screen and (max-width: map-get($breakpoints, mobile)) {        
    right: 1%;
    width: 12px;
    height: 20px;        
@@ -64,13 +64,13 @@
   z-index: 10;
   cursor: pointer;
 
-  @media screen and (min-width: 601px) and (max-width: 900px) {        
+  @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {        
    left: 4%;
    width: 24px;
    height: 40px;
   }   
       
-  @media screen and (max-width: 600px) {        
+  @media screen and (max-width: map-get($breakpoints, mobile)) {        
    left: 1%;
    width: 12px;
    height: 20px;        
