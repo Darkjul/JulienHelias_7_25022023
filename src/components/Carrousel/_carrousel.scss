@@ -9,10 +9,10 @@
   margin-bottom: 0;
   overflow: hidden;
 
-   @media screen and (max-width: 600px) {
-     height: 255px;  
-     width: 90%; 
-    }    
+  @media screen and (max-width: 600px) {
+   height: 255px;  
+   width: 90%; 
+  }    
 }
 
 .img-logement {
@@ -21,10 +21,10 @@
   border-radius: 20px;
   margin: 0 20px 0 20px;    
     
-   @media screen and (max-width: 600px) {
-     border-radius: 10px;
-     margin: 0;
-    }  
+  @media screen and (max-width: 600px) {
+   border-radius: 10px;
+   margin: 0;
+  }  
 }   
 
 .active-anim {
@@ -41,17 +41,17 @@
   z-index: 10;
   cursor: pointer;
 
-    @media screen and (min-width: 601px) and (max-width: 900px) {        
-     right: 4%;
-     width: 24px;
-     height: 40px;
-    }   
+  @media screen and (min-width: 601px) and (max-width: 900px) {        
+   right: 4%;
+   width: 24px;
+   height: 40px;
+  }   
       
-    @media screen and (max-width: 600px) {        
-     right: 1%;
-     width: 12px;
-     height: 20px;        
-    }      
+  @media screen and (max-width: 600px) {        
+   right: 1%;
+   width: 12px;
+   height: 20px;        
+  }      
 }
 
 .leftArrow {
@@ -64,17 +64,17 @@
   z-index: 10;
   cursor: pointer;
 
-    @media screen and (min-width: 601px) and (max-width: 900px) {        
-     left: 4%;
-     width: 24px;
-     height: 40px;
-    }   
+  @media screen and (min-width: 601px) and (max-width: 900px) {        
+   left: 4%;
+   width: 24px;
+   height: 40px;
+  }   
       
-    @media screen and (max-width: 600px) {        
-     left: 1%;
-     width: 12px;
-     height: 20px;        
-    }   
+  @media screen and (max-width: 600px) {        
+   left: 1%;
+   width: 12px;
+   height: 20px;        
+  }   
 }
 
 .slideCount {
