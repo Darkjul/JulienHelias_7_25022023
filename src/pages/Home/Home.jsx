@@ -8,11 +8,11 @@ import Banner from "../../components/Banner/Banner";
 // Constante Home qui va afficher les éléments composants la page d'acceuil
 
 const Home = () => {
-  // Import des Logements via le fichier logements.JSON avec un Fetch
+  // Import des Logements via le fichier logements.json avec un Fetch
 
   const [data, setData] = useState([]);
   const getData = () => {
-    fetch("/logements.JSON")
+    fetch("/logements.json")
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((error) => console.log(error));
