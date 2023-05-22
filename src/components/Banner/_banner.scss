@@ -1,8 +1,8 @@
 // Style SCSS des composants de la bannière
 
-.banner {    
-  height: 223px;      
-  margin: 20px;    
+.banner {
+  height: 223px;
+  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,56 +13,56 @@
     color: $tertiary-color;
     font-family: "Monserrat", sans-serif;
     font-weight: 500;
-    font-size : 40px;
+    font-size: 40px;
 
     @media screen and (max-width: map-get($breakpoints, mobile)) {
-     font-size: 24px;
-     left: 10%;                 
-     width: 55%;         
-     text-align: left;
+      font-size: 24px;
+      left: 10%;
+      width: 55%;
+      text-align: left;
     }
 
-    @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {        
-     font-size: 35px;
+    @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {
+      font-size: 35px;
     }
   }
 
   &_image {
-    position: relative;        
-    width: 100%; 
-    height: 100%;       
+    position: relative;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 25px;      
+    border-radius: 25px;
     filter: brightness(0.6);
 
     @media screen and (max-width: map-get($breakpoints, mobile)) {
-     border-radius: 10px;       
+      border-radius: 10px;
     }
 
-    @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {        
-     height: 200px;
-     width: 100%;
+    @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {
+      height: 200px;
+      width: 100%;
     }
-  }   
+  }
 
-  @media screen and (max-width: map-get($breakpoints, mobile)) {         
-   border-radius: 10px;
-   height: 111px;        
-  } 
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    border-radius: 10px;
+    height: 111px;
+  }
 
-  @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, desktop)) {        
-   border-radius: 10px;
-  }   
+  @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, desktop)) {
+    border-radius: 10px;
+  }
 }
 
 .banner_about {
-  height: 223px;      
-  margin: 20px;     
+  height: 223px;
+  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: map-get($breakpoints, mobile)) {         
-   height: 223px;       
-  }  
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    height: 223px;
+  }
 }

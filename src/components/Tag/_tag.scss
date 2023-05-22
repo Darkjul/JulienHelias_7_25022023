@@ -1,7 +1,7 @@
 // Style SCSS du composant Tag
 
 .tagContainer {
-    display: flex;    
+  display: flex;
 }
 
 .tagButton {
@@ -20,9 +20,9 @@
   margin-right: 10px;
   padding: 2px 10px 2px 10px;
 
-    @media screen and (max-width: 600px) {
-     font-size: 10px;   
-    } 
+  @media screen and (max-width: 600px) {
+    font-size: 10px;
+  }
 }
 
 .title-tags-container {
@@ -30,34 +30,34 @@
   flex-direction: column;
   justify-content: center;
 
-    h1 {        
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 142.6%;        
-		margin-bottom: 5px;
-        
-        @media screen and (max-width: map-get($breakpoints, mobile)) {
-         font-size: 18px;   
-        } 
-    }
+  h1 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    margin-bottom: 5px;
 
-    h3 {
-        margin: 0;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 142.6%; 
-        
-        @media screen and (max-width: map-get($breakpoints, mobile)) {
-         font-size: 14px;   
-        } 
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+      font-size: 18px;
     }
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+      font-size: 14px;
+    }
+  }
 }
 
 .tags-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-top: 15px;
 }

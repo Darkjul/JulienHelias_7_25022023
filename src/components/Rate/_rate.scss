@@ -5,11 +5,11 @@
   justify-content: space-between;
   width: 170px;
   height: 18px;
-  margin-bottom: 18px;   
+  margin-bottom: 18px;
 
   @media screen and (max-width: map-get($breakpoints, mobile)) {
-   width: 100px;             
-  } 
+    width: 100px;
+  }
 }
 
 .rate-container {
@@ -23,7 +23,7 @@
   height: 24px;
 
   @media screen and (max-width: map-get($breakpoints, mobile)) {
-   width: 13px;
-   height: 13px;   
-  } 
+    width: 13px;
+    height: 13px;
+  }
 }

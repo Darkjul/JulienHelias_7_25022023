@@ -10,22 +10,22 @@
   overflow: hidden;
 
   @media screen and (max-width: map-get($breakpoints, mobile)) {
-   height: 255px;  
-   width: 90%; 
-  }    
+    height: 255px;
+    width: 90%;
+  }
 }
 
 .img-logement {
-  width: 100%;    
+  width: 100%;
   object-fit: cover;
   border-radius: 20px;
-  margin: 0 20px 0 20px;    
-    
+  margin: 0 20px 0 20px;
+
   @media screen and (max-width: map-get($breakpoints, mobile)) {
-   border-radius: 10px;
-   margin: 0;
-  }  
-}   
+    border-radius: 10px;
+    margin: 0;
+  }
+}
 
 .active-anim {
   opacity: 1;
@@ -41,17 +41,17 @@
   z-index: 10;
   cursor: pointer;
 
-  @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {        
-   right: 4%;
-   width: 24px;
-   height: 40px;
-  }   
-      
-  @media screen and (max-width: map-get($breakpoints, mobile)) {        
-   right: 1%;
-   width: 12px;
-   height: 20px;        
-  }      
+  @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {
+    right: 4%;
+    width: 24px;
+    height: 40px;
+  }
+
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    right: 1%;
+    width: 12px;
+    height: 20px;
+  }
 }
 
 .leftArrow {
@@ -64,17 +64,17 @@
   z-index: 10;
   cursor: pointer;
 
-  @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {        
-   left: 4%;
-   width: 24px;
-   height: 40px;
-  }   
-      
-  @media screen and (max-width: map-get($breakpoints, mobile)) {        
-   left: 1%;
-   width: 12px;
-   height: 20px;        
-  }   
+  @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {
+    left: 4%;
+    width: 24px;
+    height: 40px;
+  }
+
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    left: 1%;
+    width: 12px;
+    height: 20px;
+  }
 }
 
 .slideCount {
@@ -82,7 +82,7 @@
   bottom: 25px;
   left: 50%;
   transform: translateX(-50%);
-  color: $tertiary-color;        
+  color: $tertiary-color;
   font-weight: 500;
   font-size: clamp(14px, 2vw, 18px);
 }

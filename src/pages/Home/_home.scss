@@ -1,9 +1,9 @@
 // Style SCSS de la page d'acceuil
 
-main {
-  @media screen and (min-width: map-get($breakpoints, breakhome)) {     
-  margin-left: 100px;
-  margin-right: 100px;
+@media screen and (min-width: map-get($breakpoints, breakhome)) {
+  main {
+    margin-left: 100px;
+    margin-right: 100px;
   }
 }
 
@@ -11,82 +11,82 @@ main {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  flex-wrap: wrap;    
-  background-color: $secondary-color;   
+  flex-wrap: wrap;
+  background-color: $secondary-color;
   border-radius: 25px;
   padding-left: 30px;
-  padding-right: 30px;       
-  margin: 0 20px;   
+  padding-right: 30px;
+  margin: 0 20px;
 
-  @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, desktop)) {            
-   padding: 10px;
-   background-color: $secondary-color;
-  }  
+  @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, desktop)) {
+    padding: 10px;
+    background-color: $secondary-color;
+  }
 
-  @media screen and (max-width: map-get($breakpoints, mobile)) {  
-   flex-direction: column;
-   padding: 0;
-   margin-top: 22px;
-   background-color: $tertiary-color;        
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    flex-direction: column;
+    padding: 0;
+    margin-top: 22px;
+    background-color: $tertiary-color;
   }
 }
 
 .logements {
   display: flex;
-  background: $primary-color;   
-  border-radius: 10px;  
+  background: $primary-color;
+  border-radius: 10px;
   padding-left: 0;
   margin-top: 30px;
-  margin-bottom: 30px;  
-  width: 30%;  
+  margin-bottom: 30px;
+  width: 30%;
 
   @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, desktop)) {
-   width: 47%;        
-   margin-top: 10px;
-   margin-bottom: 10px;    
+    width: 47%;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   @media screen and (max-width: map-get($breakpoints, mobile)) {
-   height: 250px;
-   width: 100%; 
+    height: 250px;
+    width: 100%;
   }
 }
 
 .linkCard {
-  position: relative;        
+  position: relative;
   height: 340px;
   width: 100%;
-  border-radius: 10px;    
-  background: $primary-color;    
+  border-radius: 10px;
+  background: $primary-color;
   cursor: pointer;
   overflow: hidden;
-  transition : box-shadow 0.2s ease-in-out;        
+  transition: box-shadow 0.2s ease-in-out;
 
   @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, desktop)) {
-   width: 100%;    
+    width: 100%;
   }
 
   @media screen and (max-width: map-get($breakpoints, mobile)) {
-   width: 100%;
-   height: 250px;
-  }  
+    width: 100%;
+    height: 250px;
+  }
 }
 
-.img-logements {              
+.img-logements {
   width: 100%;
   height: 100%;
   background: $primary-color;
   object-fit: cover;
-  object-position: center;      
-   
+  object-position: center;
+
   @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {
-   width: 100%;    
+    width: 100%;
   }
 
   @media screen and (max-width: map-get($breakpoints, mobile)) {
-   width: 100%;
-   height: 100%;
-  }    
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .overlay {
@@ -95,8 +95,8 @@ main {
   background: $color-gradient;
   height: 100%;
   width: 100%;
-  border-radius: inherit;  
-}    
+  border-radius: inherit;
+}
 
 .titre-logements {
   z-index: 20;
@@ -106,5 +106,5 @@ main {
   right: 20px;
   font-weight: 500;
   font-size: 18px;
-  color: $secondary-color;            
+  color: $secondary-color;
 }

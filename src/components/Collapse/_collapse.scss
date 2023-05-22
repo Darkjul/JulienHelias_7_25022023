@@ -1,6 +1,6 @@
 // Style SCSS des composants Collapse de la page About
 
-.collapse { 
+.collapse {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   margin: 0 auto;
@@ -9,57 +9,57 @@
   flex-direction: column;
 
   @media screen and (max-width: map-get($breakpoints, mobile)) {
-   margin-bottom: 15px;                   
+    margin-bottom: 15px;
   }
 
-  @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {        
+  @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {
     margin-bottom: 25px;
     margin-top: 15px;
-  }        
+  }
 
-  img { 
+  img {
     display: flex;
     align-self: center;
     width: 24px;
     height: 13.71px;
 
     @media screen and (max-width: map-get($breakpoints, mobile)) {
-     width: 16px;
-     height: 9.14px;    
+      width: 16px;
+      height: 9.14px;
     }
   }
 
   &_title {
     display: flex;
-    justify-content: space-between;        
+    justify-content: space-between;
     background-color: $primary-color;
     color: $tertiary-color;
     border-radius: 5px;
     font-weight: 500;
     font-size: 18px;
-    margin : 0;
+    margin: 0;
     padding: 10px 15px;
     cursor: pointer;
 
     @media screen and (max-width: map-get($breakpoints, mobile)) {
-     font-weight: 500;
-     font-size: 13px;                    
+      font-weight: 500;
+      font-size: 13px;
     }
-        
+
     .arrow {
-     transition: all 0.2s ease-in-out;                 
+      transition: all 0.2s ease-in-out;
     }
 
     .arrow_up {
-     transform: rotate(0deg);
+      transform: rotate(0deg);
     }
 
     .arrow_down {
-     transform: rotate(180deg);
+      transform: rotate(180deg);
     }
   }
 
-  &_description { 
+  &_description {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -70,35 +70,34 @@
     opacity: 1;
     height: auto;
     margin: 0;
-    padding: 20px;        
+    padding: 20px;
     font-size: 16px;
     color: $primary-color;
-    transition: visibility 0.5s ease-in-out,
-                opacity 0.5s ease-in-out,
-                height 0.2s ease-in-out;
+    transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out,
+      height 0.2s ease-in-out;
 
     @media screen and (max-width: map-get($breakpoints, mobile)) {
-     font-weight: 400;
-     font-size: 12px;    
-    }        
+      font-weight: 400;
+      font-size: 12px;
+    }
   }
 
   &_description_hidden {
     visibility: hidden;
     opacity: 0;
-    height: 0px;        
+    height: 0px;
   }
 }
 
 .collapse-fiche-container {
-  width: 100%;  
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
   @media screen and (max-width: map-get($breakpoints, tablette)) {
-   flex-direction: column;
-   width: 99%;
+    flex-direction: column;
+    width: 99%;
   }
 }
 
@@ -106,10 +105,10 @@
   width: 47%;
 
   @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {
-   width: 97%;
+    width: 97%;
   }
 
   @media screen and (max-width: map-get($breakpoints, mobile)) {
-   width: 92%;
+    width: 92%;
   }
 }

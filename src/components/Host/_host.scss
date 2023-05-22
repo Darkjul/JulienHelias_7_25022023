@@ -1,81 +1,81 @@
 // Style SCSS du composant Host
 
 .host-comp {
- display: flex;
- align-items: center;
- justify-content: flex-end;
- width: 100%;
- margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 10px;
 }
 
 .hostPicture {
- display: flex;
- margin-left: 10px;
- width: 64px;
- height: 64px;
- border-radius: 50%;
- background: #c4c4c4;
- margin-top: 10px;
+  display: flex;
+  margin-left: 10px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #c4c4c4;
+  margin-top: 10px;
 
-	& img {
-	 width: 100%;
-   height: 100%;
-	 border-radius: 50%;
-	 object-fit: cover;
-	}
+  & img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
 
-	@media screen and (max-width: map-get($breakpoints, mobile)) {
-   width: 32px;
-	 height: 32px;   
-  } 
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .host-name {
- display: flex;
- align-items: center;
- justify-content: flex-end;
- width: 63px;
- height: 66px;
- text-align: right;	
- font-size: 18px;
- font-style: normal;
- font-weight: 500;
- line-height: 142.6%;
- margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 63px;
+  height: 66px;
+  text-align: right;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  margin-top: 10px;
 
-   @media screen and (max-width: map-get($breakpoints, mobile)) {
-     font-size: 12px;   
-   }
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    font-size: 12px;
+  }
 }
 
 .rate-host-container {
- display: flex;
- flex-direction: column;
- justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   @media screen and (max-width: map-get($breakpoints, mobile)) {
-   flex-direction: row-reverse;
-	 justify-content: space-between;  
-	 align-items: flex-end;
-	 height: 60px;
-  } 	
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 60px;
+  }
 }
 
 .hostInfo-container {
- display: flex;
- flex-direction: row;
- width: 97%;
- justify-content: space-between;	
- margin-bottom: 20px;		
+  display: flex;
+  flex-direction: row;
+  width: 97%;
+  justify-content: space-between;
+  margin-bottom: 20px;
 
-  @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {        
+  @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {
     width: 95%;
-  }  
+  }
 
   @media screen and (max-width: map-get($breakpoints, mobile)) {
-   flex-direction: column;
-   justify-content: space-between;	
-   width: 90%;
-	 margin-bottom: 0px;	   
-  } 
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 0px;
+  }
 }
